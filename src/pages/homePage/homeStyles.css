@@ -1,0 +1,19 @@
+.container{
+    margin: 3rem 0;
+}
+.sub__heading{
+    margin-top: 1rem;
+}
+.no__record{
+    padding: 1rem ;
+    margin-bottom: 2rem;
+    color: gray;
+}
+.create-one__container{
+    margin: 0 auto;
+    width: 12rem;
+}
+.notice__container{
+    width: 80%;
+    margin: 3rem auto;
+}

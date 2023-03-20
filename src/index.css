@@ -1,13 +1,194 @@
+:root {
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-grayish-blue: hsl(246, 25%, 77%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(171, 184, 195, 0.1);
+  font-size: 17px;
+  text-align: center;
+  color: #0f3557;
+}
+
+header {
+  background-color: #0b0f27;
+  color: white;
+  padding: 1.1rem 0;
+  margin-top: 0;
+  font-family: monaco;
+  color: white;
+  position: relative;
+}
+
+.btn__normal {
+  padding: 12px 0;
+  width: 100%;
+  background: #08c427;
+  outline: 0;
+  border: 0;
+  height: 3rem;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.btn__normal:hover {
+  background-color: rgba(8, 196, 39, 0.8);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.input__container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 30rem;
+  padding: 1rem;
+}
+.input__container-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 4px;
+  width: 100%;
+  max-width: 30rem;
+}
+.input__container .input__container-label {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+}
+.input__container-input {
+  width: 100%;
+  padding: 0 0.4rem;
+  height: 2.5rem;
+  border: 1px solid #0b0f27;
+  border-radius: 4px;
+}
+.border-bottom {
+  padding-bottom: 16px;
+  border-bottom: 1px solid gray;
+}
+
+.form-instruction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4963f2;
+  width: 100%;
+  height: 3rem;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0 2rem 0 2rem;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.input__checkbox {
+  height: 1.2rem;
+}
+.input__select {
+  width: 100%;
+  padding: 0 0.4rem;
+  height: 2.5rem;
+  border: 1px solid #0b0f27;
+  border-radius: 4px;
+}
+.form-one__btn {
+  width: 100%;
+  max-width: 10rem;
+  padding-right: 1rem;
+  margin-top: 0.5rem;
+  float: right;
+}
+.form-other__btn {
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+.form-other__btn button {
+  max-width: 10rem;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-red:hover {
+  background-color: rgba(255, 0, 0, 0.75);
+}
+.popup-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+.popup-modal {
+  width: 80%;
+  height: 15rem;
+  border-radius: 8px;
+  max-width: 30rem;
+  padding: 1rem 0;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+table {
+  width: 80%;
+  max-width: 45rem;
+  height: 40rem;
+  margin: 2rem auto;
+  border: 2px solid;
+  border-collapse: collapse;
+  text-align: left;
+  
+}
+tr,
+td {
+  padding:16px;
+  border: 2px solid gray;
+}
+
+.first__data {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+
+.header__btn {
+  width: 8rem;
+}
+.header__btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
