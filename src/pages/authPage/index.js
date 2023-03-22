@@ -46,7 +46,7 @@ function Signup() {
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             type='text'
-            placeholder='Your Name'
+            placeholder='Username'
             autoComplete='off'
             required
             {...register("username", { required: true })}
@@ -121,7 +121,7 @@ function Signin() {
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             type='text'
-            placeholder='Your Name'
+            placeholder='Username'
             required
             {...register("username", { required: true })}
           />
